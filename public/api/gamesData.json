@@ -1,0 +1,101 @@
+
+[
+  {
+    "_id": 1,
+    "title": "League of Legends",
+    "description": "A popular multiplayer online battle arena (MOBA) game where players control champions with unique abilities and battle against each other or computer-controlled enemies.",
+    "level": "Median",
+    "category": "MOBA",
+    "rating": 3,
+    "discount": 0.5,
+    "price": 79.0,
+    "img": "../assets/games/lol-bg.jpeg",
+    "trailer": "https://www.youtube.com/embed/vzHrjOMfHPY"
+  },
+  {
+    "_id": 2,
+    "title": "Mario Kart 8 Deluxe",
+    "description": "A colorful and entertaining racing game featuring characters from the Mario universe. Players compete in kart races using power-ups to gain an advantage over opponents.",
+    "level": "Entry",
+    "category": "Racing",
+    "rating": 3,
+    "discount": 0.3,
+    "price": 52.56,
+    "img": "../assets/games/mario-bg.jpeg",
+    "trailer": "https://www.youtube.com/embed/tKlRN2YpxRE"
+  },
+
+  {
+    "_id": 3,
+    "title": "Dota II",
+    "description": " Another popular multiplayer online battle arena (MOBA) game, known for its strategic depth and intense team-based gameplay. Players choose from a variety of heroes and compete to destroy the enemy team's base.",
+    "level": "Median",
+    "category": "MOBA",
+    "rating": 4,
+    "discount": 0.3,
+    "price": 85.0,
+    "img": "../assets/games/dota-2-bg.jpg",
+    "trailer": "https://www.youtube.com/embed/-cSFPIwMEq4"
+  },
+  {
+    "_id": 4,
+    "title": "King of Fighters XV",
+    "description": "A classic fighting game series featuring a diverse cast of characters from different backgrounds and martial arts styles. Players engage in fast-paced battles with intricate combos and special moves.",
+    "level": "Entry",
+    "category": "Fighting",
+    "rating": 3,
+    "discount": 0.2,
+    "price": 65.6,
+    "img": "../assets/games/king-of-fighters-xv.jpeg",
+    "trailer": "https://www.youtube.com/embed/_o7Ip64-Sio"
+  },
+
+  {
+    "_id": 5,
+    "title": "Forza Horizon 5",
+    "description": "An open-world racing game set in stunning locations with a wide variety of cars to choose from. Players can participate in races, challenges, and events while exploring the vibrant world.",
+    "level": "High",
+    "category": "Racing",
+    "rating": 4,
+    "discount": 0,
+    "price": 129.0,
+    "img": "../assets/games/forza-horizon-5-bg.jpeg",
+    "trailer": "https://www.youtube.com/embed/FYH9n37B7Yw"
+  },
+  {
+    "_id": 6,
+    "title": "Halo Infinite",
+    "description": "The latest installment in the iconic Halo series, featuring intense first-person shooter gameplay and a compelling sci-fi story. Players step into the shoes of Master Chief as he battles against alien forces.",
+    "level": "Median",
+    "category": "Battle",
+    "rating": 4,
+    "discount": 0,
+    "price": 85.8,
+    "img": "../assets/games/halo-infinite-bg.jpeg",
+    "trailer": "https://www.youtube.com/embed/PyMlV5_HRWk"
+  },
+  {
+    "_id": 7,
+    "title": "Fortnite Spider-Man",
+    "description": "A popular battle royale game with a twist, featuring the addition of Spider-Man from Marvel Comics. Players compete to be the last one standing using building mechanics and various weapons.",
+    "level": "Entry",
+    "category": "Battle",
+    "rating": 3,
+    "discount": 0.6,
+    "price": 69.0,
+    "img": "../assets/games/fortnite-bg.jpeg",
+    "trailer": "https://www.youtube.com/embed/7bq0Boq2B3Y"
+  },
+  {
+    "_id": 8,
+    "title": "Diablo III",
+    "description": "An action-packed role-playing game (RPG) set in the dark fantasy world of Sanctuary. Players embark on epic quests, battle hordes of monsters, and collect powerful loot as they journey to defeat the Lord of Terror.",
+    "level": "High",
+    "category": "RPG",
+    "rating": 5,
+    "discount": 0.5,
+    "price": 99.0,
+    "img": "../assets/games/diablo-3-bg.jpeg",
+    "trailer": "https://www.youtube.com/embed/M2TpNQhfkp4"
+  }
+]
