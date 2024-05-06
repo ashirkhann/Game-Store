@@ -20,20 +20,16 @@ const Sidebar = ({ sidebarToggle }) => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
-    const sidebarStyle = {
-        transition: 'width 0.3s ease'
-    };
-
     const handleLogout = async () => {
         if (user) {
             await signOut(auth);
             dispatch(logout());
             navigate('/')
-        } 
+        }
     }
 
     return (
-        <div className={`sidebar flex flex-col justify-between h-full bg-gray-900 text-white px-2 sm:px-6 py-4  items-center rounded-xl transition-all ease-in duration-400`}>
+        <div className={`sidebar flex flex-col justify-between h-full bg-gray-900 text-white px-2 sm:px-6 py-4 transfrom  ${sidebarToggle ? 'sm:translate-x-0 -translate-x-12 w-0 px-0' : 'translate-0'}   items-center rounded-xl transition-all ease-in duration-200`}>
             {/* Sidebar */}
             <div className="flex flex-col gap-2 ">
                 {/* heading */}
@@ -70,7 +66,9 @@ const Sidebar = ({ sidebarToggle }) => {
                 className="text-white flex items-center sm:justify-start justify-center space-x-2 p-2 focus:outline-none bg-gray-800  hover:bg-gray-700 w-full rounded-xl"
                 onClick={user && handleLogout}>
                 {user ? <RiLogoutBoxLine size={20} /> : <RiLoginBoxLine size={20} />}
-                <span className={`${sidebarToggle ? 'hidden' : 'sm:block hidden'}`}>{user ? 'Logout' : 'Login'}</span>
+                <span className={`sm:block hidden`}>
+                    {user ? 'Logout' : 'Login'}
+                </span>
             </NavLink>
 
         </div>
