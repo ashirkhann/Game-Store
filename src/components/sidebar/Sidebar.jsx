@@ -29,7 +29,7 @@ const Sidebar = ({ sidebarToggle }) => {
     }
 
     return (
-        <div className={`sidebar flex flex-col justify-between h-full bg-gray-900 text-white px-2 sm:px-6 py-4 transfrom  ${sidebarToggle ? 'sm:translate-x-0 -translate-x-12 w-0 px-0' : 'translate-0'}   items-center rounded-xl transition-all ease-in duration-200`}>
+        <div className={`sidebar flex flex-col justify-between h-full bg-gray-900 text-white px-0 sm:px-6 py-4 transfrom  ${sidebarToggle ? 'sm:translate-x-0 -translate-x-12 w-0 px-0' : 'translate-0'}   items-center rounded-xl transition-all ease-in duration-200`}>
             {/* Sidebar */}
             <div className="flex flex-col gap-2 ">
                 {/* heading */}
