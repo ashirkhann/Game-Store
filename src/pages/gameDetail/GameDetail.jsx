@@ -10,7 +10,6 @@ import { db } from '../../firebase/firebase';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { useNavigate } from 'react-router-dom';
 import GameRating from '../../components/gameCard/GameRating';
 import { FaHeart } from 'react-icons/fa';
 import { IoBagCheckSharp } from 'react-icons/io5';
@@ -29,7 +28,6 @@ const GameDetail = () => {
     const dispatch = useDispatch();
     const wishlistItems = useSelector(selectWishlistItems);
     const cartItems = useSelector(selectCartItems);
-    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchGameData = async () => {
@@ -60,21 +58,20 @@ const GameDetail = () => {
         setCarted(isCarted);
     }, [cartItems, game]);
 
+
     useEffect(() => {
         // Adjust video size for smaller screens
-        const handleResize = () => {
-            if (window.innerWidth < 560) {
-                setVideoWidth(window.innerWidth - 20);
-                setVideoHeight((window.innerWidth - 20) * (315 / 560));
-            } else {
-                setVideoWidth(560);
-                setVideoHeight(315);
-            }
+         const handleResize = () => {
+            const newWidth = window.innerWidth < 560 ? window.innerWidth - 20 : 560;
+            setVideoWidth(newWidth);
+            setVideoHeight((newWidth / 560) * 315);
         };
 
+        handleResize(); // Call once on initial render
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
 
     const handleWishlist = async (game) => {
         try {
