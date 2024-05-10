@@ -97,7 +97,7 @@ const GameCard = React.memo(({ game }) => {
         <>
             <div className="max-w-xs h-full rounded overflow-hidden shadow-lg bg-gray-800  transition-all duration-200 ease-in transform text-white"
             >
-                <div className={`right-1 top-1 absolute rounded-md p-2 px-3 bg-gray-800 ${wishlisted ? 'text-red-500' : 'text-white'}`}
+                <div className={`right-1 top-1 absolute rounded-md p-2 px-3 bg-gray-800 ${wishlisted ? 'text-red-500' : 'text-white'} cursor-pointer`}
                     onClick={() => handleWishlist(game)}>
                     <FaHeart size={16} />
                 </div>
@@ -117,7 +117,7 @@ const GameCard = React.memo(({ game }) => {
                             <div className="font-bold inline-block text-sm py-1 px-2 rounded-lg bg-yellow-600">{game.discount * 100}% OFF</div>
                             <div className="font-bold inline-block text-sm py-1 px-2 rounded-lg bg-red-600 ">${game.price - (game.price * game.discount)}</div>
                         </div>
-                        <div className={` rounded-md p-2 px-3 bg-cyan-600 ${carted && 'bg-cyan-900'}`}
+                        <div className={` rounded-md p-2 px-3 bg-cyan-600 ${carted && 'bg-cyan-900'} cursor-pointer`}
                             onClick={() => handleCart(game)}>
                             {carted ? <FaCheck size={16} /> : <IoBagCheckSharp size={16} />}
                         </div>

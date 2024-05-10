@@ -140,9 +140,9 @@ const GameDetail = () => {
                     {/* Toast container */}
                     <ToastContainer />
 
-                    <div className="m-4 mx-auto max-w-xs  rounded overflow-hidden shadow-lg bg-gray-800 cursor-pointer transition-all duration-200 ease-in transform text-white">
+                    <div className="m-4 mx-auto max-w-xs  rounded overflow-hidden shadow-lg bg-gray-800  transition-all duration-200 ease-in transform text-white">
                         <div
-                            className={`right-1 top-1 absolute rounded-md p-2 px-3 bg-gray-800 ${wishlisted ? 'text-red-500' : 'text-white'}`}
+                            className={`right-1 top-1 absolute rounded-md p-2 px-3 bg-gray-800 ${wishlisted ? 'text-red-500' : 'text-white'} cursor-pointer`}
                             onClick={(e) => {
                                 e.stopPropagation();
                                 handleWishlist(game);
@@ -165,7 +165,7 @@ const GameDetail = () => {
                                     <div className="font-bold inline-block text-sm py-1 px-2 rounded-lg bg-red-600 ">${game.price - game.price * game.discount}</div>
                                 </div>
                                 <div
-                                    className={`rounded-md p-2 px-3 bg-cyan-600 ${carted && 'bg-cyan-900'}`}
+                                    className={`rounded-md p-2 px-3 bg-cyan-600 ${carted && 'bg-cyan-900'} cursor-pointer`}
                                     onClick={(e) => {
                                         e.stopPropagation();
                                         handleCart(game);
